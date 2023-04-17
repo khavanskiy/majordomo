@@ -17,8 +17,8 @@ Define('DIR_MODULES', "./modules/");
 Define('DEBUG_MODE', 1);
 Define('UPDATES_REPOSITORY_NAME', 'smarthome');
 
-Define('PROJECT_TITLE', 'MajordomoSL');
-Define('PROJECT_BUGTRACK', "bugtrack@smartliving.ru");
+Define('PROJECT_TITLE', 'NewLine');
+Define('PROJECT_BUGTRACK', "in84@mail.ru");
 
 date_default_timezone_set('UTC');
 
@@ -41,19 +41,13 @@ else
 
 Define('ROOT', DOC_ROOT."/");
 Define('ROOTHTML', "/");
-Define('PROJECT_DOMAIN', isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : php_uname("n"));
-
-// 1-wire OWFS server
-//Define('ONEWIRE_SERVER', 'tcp://localhost:8234');    
+Define('PROJECT_DOMAIN', isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : php_uname("n"));  
 
 /*
    Define('HOME_NETWORK', '192.168.0.*');                  // home network (optional)
    Define('EXT_ACCESS_USERNAME', 'user');                  // access details for external network (internet)
    Define('EXT_ACCESS_PASSWORD', 'password');
 */
-
-/// (Optional)
-//Define('DROPBOX_SHOPPING_LIST', 'c:/data/dropbox/list.txt');  
 
  $restart_threads=array(
                        'cycle_execs.php', 
@@ -68,13 +62,8 @@ Define('PROJECT_DOMAIN', isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'
 
  //Define('HISTORY_NO_OPTIMIZE', 1);
 
-Define('GIT_URL', 'https://github.com/sergejey/majordomo/');
-Define('MASTER_UPDATE_URL', GIT_URL.'archive/master.tar.gz'); // master update URL (https://github.com/sergejey/majordomo/archive/alpha.tar.gz)
-
-$aditional_git_urls = array(
-   //'https://github.com/AKEB/majordomo/archive/alpha.tar.gz' => 'AKEB/alpha',
-   //'https://github.com/AKEB/majordomo/archive/master.tar.gz' => 'AKEB/master',
-);
+Define('GIT_URL', 'https://github.com/khavanskiy/majordomo/');
+Define('MASTER_UPDATE_URL', GIT_URL.'archive/master.tar.gz'); 
 
 
 //Define('WAIT_FOR_MAIN_CYCLE', 1);
