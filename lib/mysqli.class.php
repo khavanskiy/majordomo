@@ -135,9 +135,9 @@ class mysql
                 $this->dbh = mysqli_connect($this->host, $this->user, $this->password, $this->dbName);
             }
         } else {
-            if ($this->port) {
-                $this->dbh = mysqli_connect('p:' . $this->host, $this->user, $this->password, $this->dbName, $this->port);
-            } else {
+			if ($this->port) {
+				$this->dbh = mysqli_connect(null, $this->user, $this->password,$this->dbName,$this->port,'/var/run/mysqld/mysqld.sock');
+			} else {
                 $this->dbh = mysqli_connect('p:' . $this->host, $this->user, $this->password, $this->dbName);
             }
         }

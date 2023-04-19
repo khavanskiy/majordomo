@@ -6,7 +6,6 @@
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td valign="top" colspan=2>
-
             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td width="350">
@@ -25,18 +24,19 @@
                                         }
                                         return false;
                                     }
+									$('#leftPanel').toggle();
                                 </script>
-                                <a href="#" onClick="return leftPanelToggle();"><img id="leftPanelToggleIcon" border="0"
-                                                                                     src="<#ROOTHTML#>img/icons/application-side-contract-icon.png"
-                                                                                     border="0"></a>
+                                <a href="#" onClick="return leftPanelToggle();">
+									<img
+									id="leftPanelToggleIcon" border="0"
+									src="<#ROOTHTML#>img/icons/application-side-expand-icon.png"
+                                    border="0"
+									>
+								</a>
                             </td>
                         </table>
                     </td>
-                    [#if SHOW_PLAYER=="1"#]
-                    <td align="right">
-                        [#module name="app_player" mode="header"#]
-                    </td>
-                    [#endif#]
+
                     <td align="center">
                         <a href="<#ROOTHTML#>admin.php" class="btn btn-default btn-sm"><#LANG_CONTROL_PANEL#></a>
                     </td>
